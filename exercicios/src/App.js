@@ -8,13 +8,15 @@ import { Text, View, StyleSheet } from 'react-native'
 // import Frag from './components/Frag'
 // import Botao from './components/Botao'
 // import Contador from './components/Contador'
-import Pai from './components/direta/Pai'
+// import Pai from './components/direta/Pai'
+import Pai from './components/indireta/Pai'
 
 
 export default () => (
     <View style={style.App}>
         <Pai />
         {/* <Botao />
+        <Pai />
         <Contador inicial={100} passo={13} />
         <Contador />
         <Frag principal="Cadastro" secundario="Tela de cadastro" />
