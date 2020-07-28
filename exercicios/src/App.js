@@ -5,13 +5,15 @@ import { Text, View, StyleSheet } from 'react-native'
 // import Comp, { Comp1, Comp2 } from './components/Multi'
 // import MinMax from './components/MinMax'
 // import Aleatorio from './components/Aleatorio'
-import Frag from './components/Frag'
+// import Frag from './components/Frag'
+import Botao from './components/Botao'
 
 
 export default () => (
     <View style={style.App}>
-        <Frag principal="Cadastro" secundario="Tela de cadastro" />
-        {/* <Aleatorio min={1} max={60} />
+        <Botao />
+        {/* <Frag principal="Cadastro" secundario="Tela de cadastro" />
+        <Aleatorio min={1} max={60} />
         <Aleatorio min={1} max={60} />
         <Aleatorio min={1} max={60} />
         <Aleatorio min={1} max={60} />
