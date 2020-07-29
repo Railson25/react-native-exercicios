@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet, SafeAreaView } from 'react-native'
-import FlexboxV1 from './components/layout/FlexboxV1'
+// import FlexboxV1 from './components/layout/FlexboxV1'
+import FlexboxV2 from './components/layout/FlexboxV2'
 
 
 // import ListaProdutos from './components/produtos/ListaProdutos'
@@ -25,8 +26,9 @@ import FlexboxV1 from './components/layout/FlexboxV1'
 
 export default () => (
     <SafeAreaView style={style.App}>
-        <FlexboxV1 />
+        <FlexboxV2 />
         {/* <Botao />
+        <FlexboxV1 />
         <DigiteSeuNome />
         <ListaProdutosV2 />
         <ListaProdutos />
