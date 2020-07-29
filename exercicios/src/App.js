@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyleSheet, SafeAreaView } from 'react-native'
 
+import UsuarioLogado from './components/UsuarioLogado'
+
 // import Primeiro from './components/Primeiro'
 // import Comp, { Comp1, Comp2 } from './components/Multi'
 // import MinMax from './components/MinMax'
@@ -13,11 +15,16 @@ import { StyleSheet, SafeAreaView } from 'react-native'
 // import ContadorV2 from './components/contador/ContadorV2'
 // import Diferenciar from './components/Diferenciar'
 // import ParImpar from './components/ParImpar'
-import Pai from './components/relacao/Pai'
-import Filho from './components/relacao/Filho'
+// import Pai from './components/relacao/Pai'
+// import Filho from './components/relacao/Filho'
 
 export default () => (
     <SafeAreaView style={style.App}>
+        <UsuarioLogado usuario={ {nome: 'Gui', email:'gui@gui.com'} } />
+        <UsuarioLogado usuario={ {nome: 'Gui', email:''} } />
+        <UsuarioLogado usuario={ {nome: '', email:'carlos@empresa.com'} } />
+        <UsuarioLogado usuario={ null } />
+        {/* <Botao />
         <Pai>
             <Filho nome="Bia" sobrenome="Aruuda" />
             <Filho nome="Carlos" sobrenome="Aruuda" />
@@ -26,7 +33,6 @@ export default () => (
             <Filho nome="Ana" sobrenome="Silva" />
             <Filho nome="Julia" sobrenome="Silva" />
         </Pai>
-        {/* <Botao />
         <ParImpar num={3} />
         <Diferenciar />
         <ContadorV2 />
